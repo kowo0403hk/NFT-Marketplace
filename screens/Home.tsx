@@ -1,11 +1,13 @@
-import React, { FC } from "react";
-import { View, Text } from "react-native";
+import React, { FC, useState } from "react";
+import { View, SafeAreaView, FlatList, Text } from "react-native";
+import { COLORS, NFTData } from "../constants";
+import { HomeHeader, FocusStatusBar, NFTCard } from "../components";
 
 const Home: FC = () => {
   return (
-    <View>
-      <Text>Home</Text>
-    </View>
+    <SafeAreaView style={{ flex: 1 }}>
+      <FocusStatusBar background={COLORS.primary} />
+    </SafeAreaView>
   );
 };
 
