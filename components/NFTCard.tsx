@@ -3,6 +3,7 @@ import { View, Image, Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { COLORS, SIZES, SHADOWS, assets } from "../constants";
 import { CircleButton, RectangularButton } from "./Button";
+import { SubInfo, ETHPrice, NFTTitle } from "./SubInfo";
 
 interface IBids {
   id: string;
@@ -52,7 +53,7 @@ const NFTCard: FC<INFTCard> = ({ data }: INFTCard) => {
         />
         <CircleButton imgUrl={assets.heart} right={10} top={10} />
       </View>
-      <Text>NFT Card</Text>
+      <SubInfo />
     </View>
   );
 };

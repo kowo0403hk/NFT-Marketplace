@@ -5,14 +5,14 @@ import { COLORS, SIZES, SHADOWS, FONTS } from "../constants";
 
 interface ICircle {
   imgUrl: any;
-  handlePress: Function;
+  // handlePress: Function;
   right: number;
   top: number;
 }
 
 export const CircleButton: FC<ICircle> = ({
   imgUrl,
-  handlePress,
+  // handlePress,
   right,
   top,
 }: ICircle) => {
@@ -30,7 +30,7 @@ export const CircleButton: FC<ICircle> = ({
         top,
         ...SHADOWS.light,
       }}
-      onPress={handlePress}
+      // onPress={handlePress}
     >
       <Image
         source={imgUrl}
